@@ -1,0 +1,28 @@
+body{
+    background-color: #efefef;
+}
+
+.main{
+    background-color: #ffffff;
+    margin: 30px;
+}
+
+.btn-publish{
+    float: right;
+    margin-bottom: 15px;
+}
+
+.media-object {
+    width: 45px;
+    height: 45px;
+}
+
+.text-desc {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+}
+
+.profile .section {
+    margin-top: 15px;
+}
