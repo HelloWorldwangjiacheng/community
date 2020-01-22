@@ -4,6 +4,7 @@ import life.majiang.community.community.data_transfer_model.PaginationDTO;
 import life.majiang.community.community.data_transfer_model.QuestionDTO;
 import life.majiang.community.community.exception.CustomizeErrorCode;
 import life.majiang.community.community.exception.CustomizeException;
+import life.majiang.community.community.mapper.QuestionExtMapper;
 import life.majiang.community.community.mapper.QuestionMapper;
 import life.majiang.community.community.mapper.UserMapper;
 import life.majiang.community.community.model.Question;
@@ -26,6 +27,9 @@ public class QuestionService {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private QuestionExtMapper questionExtMapper;
 
     //上面这个方法是给所有问题分页展示用的
     public PaginationDTO list(Integer page, Integer size) {
@@ -60,6 +64,7 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
+//        questionDTOList.reverse();
         paginationDTO.setQuestions(questionDTOList);
         return paginationDTO;
     }
@@ -147,5 +152,22 @@ public class QuestionService {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
+    }
+
+    public void incView(Integer id) {
+//        下面这段被注释的代码其实也是能够完成简单的阅读数的增加的，但是会出现一个问题
+//        就是当有出现高并发的情况的时候可能会出现数据不一致的情况
+//        Question question = questionMapper.selectByPrimaryKey(id);
+//        Question updateQuestion = new Question();
+//        updateQuestion.setViewCount(question.getViewCount()+1);
+//        QuestionExample example = new QuestionExample();
+//        example.createCriteria().andIdEqualTo(id);
+//        questionMapper.updateByExampleSelective(updateQuestion,example);
+
+        Question question = new Question();
+        question.setId(id);
+        question.setViewCount(1);
+        questionExtMapper.incView(question);
+
     }
 }

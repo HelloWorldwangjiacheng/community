@@ -25,6 +25,9 @@ CREATE TABLE USER(
 
 SELECT * FROM `user`;
 ```
+
+mvn flyway:migrate
+
 关于MBG的部分：http://mybatis.org/generator/running/runningWithMaven.html
 
 The MBG Maven plugin includes one goal: mybatis-generator:generate
@@ -34,3 +37,16 @@ The goal can be executed from the command line with the command:mvn mybatis-gene
 You can pass parameters to the goal with standard Maven command line properties. For example:
 
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+
+```sql
+CREATE TABLE `comment`(
+	id BIGINT AUTO_INCREMENT PRIMARY KEY, /**/
+	parent_id BIGINT NOT NULL,/*父类id*/
+	`type` INT NOT NULL,/*父类类型*/
+	commentator INT NOT NULL,/*评论人id*/
+	gmt_create BIGINT NOT NULL,/*创建时间*/
+	gmt_modified BIGINT NOT NULL,/*更新时间*/
+	like_count INT DEFAULT 0/*点赞数*/
+	
+);
+```
