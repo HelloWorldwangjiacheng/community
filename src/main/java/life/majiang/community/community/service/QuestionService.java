@@ -11,7 +11,6 @@ import life.majiang.community.community.model.Question;
 import life.majiang.community.community.model.QuestionExample;
 import life.majiang.community.community.model.User;
 
-import life.majiang.community.community.model.UserExample;
 import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +21,8 @@ import java.util.List;
 
 @Service
 public class QuestionService {
+    //Could not autowire. No beans of 'xxxx' type found提示不能够自动注入bean，这个是由于IDEA的检测级别很高，
+    // 将Severity从error级别改成warning级别
     @Autowired
     private QuestionMapper questionMapper;
 
@@ -69,7 +70,7 @@ public class QuestionService {
         return paginationDTO;
     }
     //下面这个方法是给我的问题列表分页用的
-    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+    public PaginationDTO list(Long userId, Integer page, Integer size) {
         Integer totalPage;
         PaginationDTO paginationDTO = new PaginationDTO();
         //totalCount是数据库question表中的记录的数量
@@ -111,11 +112,11 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         //自定义异常抛出
         if (question == null){
-            //当你查找的问题不存在时，比如你找id为999999999999999的问题，显然是不存在的，就会抛出这个异常
+            //当你查找的问题不存在时，比如你找id为9999999999的问题，显然是不存在的，就会抛出这个异常
             throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
         }
         QuestionDTO questionDTO = new QuestionDTO();
@@ -132,6 +133,9 @@ public class QuestionService {
             //创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
+            question.setViewCount(0);
+            question.setCommentCount(0);
+            question.setLikeCount(0);
 //            questionMapper.create(question);
             //创建实质就是插入数据库
             questionMapper.insert(question);
@@ -154,7 +158,7 @@ public class QuestionService {
         }
     }
 
-    public void incView(Integer id) {
+    public void incView(Long id) {
 //        下面这段被注释的代码其实也是能够完成简单的阅读数的增加的，但是会出现一个问题
 //        就是当有出现高并发的情况的时候可能会出现数据不一致的情况
 //        Question question = questionMapper.selectByPrimaryKey(id);
@@ -164,10 +168,10 @@ public class QuestionService {
 //        example.createCriteria().andIdEqualTo(id);
 //        questionMapper.updateByExampleSelective(updateQuestion,example);
 
-        Question question = new Question();
-        question.setId(id);
-        question.setViewCount(1);
-        questionExtMapper.incView(question);
+        Question record = new Question();
+        record.setId(id);
+        record.setViewCount(1);
+        questionExtMapper.incView(record);
 
     }
 }

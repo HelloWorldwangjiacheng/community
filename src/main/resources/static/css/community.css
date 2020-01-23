@@ -31,3 +31,12 @@ body{
     color: #999999;
     font-size: 13px;
 }
+
+.comment{
+    margin: 10px 0;
+}
+
+.comment-btn{
+    margin-bottom:10px;
+    float:right;
+}
