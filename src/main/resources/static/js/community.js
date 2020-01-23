@@ -5,6 +5,12 @@ function post() {
     var content = $("#comment_content").val();
     console.log(content);
 
+    if (!content){
+        alert("不能回复空内容")
+        return ;
+    }
+
+
     $.ajax({
         type:"POST",
         url:"/comment",
@@ -18,8 +24,10 @@ function post() {
         success:function (response) {
             console.log(response)
             if (response.code == 200){
-                $("#comment_section").hide();
+                // $("#comment_section").hide();
                 alert("发送成功");
+                // window.document.reload();
+                window.location.reload();
             }else{
                 if (response.code == 2003){
                     var isAccepted = confirm(response.message);
@@ -28,6 +36,8 @@ function post() {
                         //为什么要弄这么一个标识呢？因为当其他页面登录和推出登录时，这边页面也能感知到而不用通过服务端提醒（太麻烦）
                         window.localStorage.setItem("closable",true);
                     }
+                }else if (response.code ==  2007){
+
                 }else {
                     alert(response.message);
                 }

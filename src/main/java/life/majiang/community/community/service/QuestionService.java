@@ -37,7 +37,8 @@ public class QuestionService {
         Integer totalPage;
         PaginationDTO paginationDTO = new PaginationDTO();
         //totalCount是数据库question表中的记录的数量
-        Integer totalCount = (int) questionMapper.countByExample(new QuestionExample());
+        QuestionExample question1 = new QuestionExample();
+        Integer totalCount = (int) questionMapper.countByExample(question1);
 
         if (totalCount % size == 0){
             totalPage = totalCount/size;
@@ -51,8 +52,9 @@ public class QuestionService {
 //        size*(i-1)
         Integer offset = size*(page-1);
 
-
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(new QuestionExample(), new RowBounds(offset, size));
+        QuestionExample questionExample = new QuestionExample();
+        questionExample.setOrderByClause("id desc");
+        List<Question> questions = questionMapper.selectByExampleWithRowbounds(questionExample, new RowBounds(offset, size));
 //        List<Question> questions = questionMapper.list(offset,size);
         List<QuestionDTO> questionDTOList = new ArrayList<>();
 

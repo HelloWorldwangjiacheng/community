@@ -6,6 +6,7 @@ import life.majiang.community.community.exception.CustomizeErrorCode;
 import life.majiang.community.community.model.Comment;
 import life.majiang.community.community.model.User;
 import life.majiang.community.community.service.CommentService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -37,7 +38,11 @@ public class CommentController {
             //向内封装，封装到CustomizeErrorCode这个枚举类类中
             return ResultDTO.errorOf(CustomizeErrorCode.NO_LOGIN);
         }
-
+//        commentCreateDTO == null || commentCreateDTO.getContent() == null || commentCreateDTO.getContent() == ""
+        //在org.apache.commons：commons-lang3下面的StringUntils方法类的使用效果等同于commentCreateDTO.getContent() == null || commentCreateDTO.getContent() == ""
+        if (commentCreateDTO == null || StringUtils.isBlank(commentCreateDTO.getContent())){
+            return ResultDTO.errorOf(CustomizeErrorCode.COMMENT_IS_EMPTY);
+        }
 
         Comment comment = new Comment();
         comment.setParentId(commentCreateDTO.getParentId());
