@@ -30,7 +30,7 @@ public class IndexController {
     public String index(
                         Model model,
                         @RequestParam(name = "page",defaultValue = "1") Integer page,
-                        @RequestParam(name = "size",defaultValue = "5") Integer size)
+                        @RequestParam(name = "size",defaultValue = "8") Integer size)
     {
         //重构之后将对cookie的校验放到了拦截器interceptor.SessionInterceptor中去，这里将不用校验了
         //  index方法中的 HttpServletRequest request,参数就不用了
