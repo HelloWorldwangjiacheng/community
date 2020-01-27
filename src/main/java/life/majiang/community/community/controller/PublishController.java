@@ -1,11 +1,13 @@
 package life.majiang.community.community.controller;
 
+import life.majiang.community.community.cache.TagCache;
 import life.majiang.community.community.data_transfer_model.QuestionDTO;
 import life.majiang.community.community.mapper.QuestionMapper;
 import life.majiang.community.community.mapper.UserMapper;
 import life.majiang.community.community.model.Question;
 import life.majiang.community.community.model.User;
 import life.majiang.community.community.service.QuestionService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +30,8 @@ public class PublishController {
 
 
     @GetMapping("/publish")
-    public String Publish(){
+    public String Publish(Model model){
+        model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
@@ -44,6 +47,7 @@ public class PublishController {
         model.addAttribute("title",title);
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);
+        model.addAttribute("tags", TagCache.get());
 
         //因为本项目是专注于后端的，所以把这些校验放到后端，其实正常的项目开发中应该是放到前端js来校验的，再保险一点后端也要验证因为某些手段可以绕过前端验证
         if (title == null || title == "" ){
@@ -58,6 +62,12 @@ public class PublishController {
 
         if (tag == null || tag == ""){
             model.addAttribute("error","标签不能为空");
+            return "publish";
+        }
+//        对标签合法性的检测
+        String invaild = TagCache.filterInvaild(tag);
+        if (StringUtils.isNoneBlank(invaild)){
+            model.addAttribute("error","输入非法标签"+invaild);
             return "publish";
         }
 
@@ -88,6 +98,8 @@ public class PublishController {
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
         model.addAttribute("id",question.getId());
+        model.addAttribute("tags", TagCache.get());
+
         return "publish";
     }
 }

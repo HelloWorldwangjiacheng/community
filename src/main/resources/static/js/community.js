@@ -1,3 +1,4 @@
+// require('/js/jquery-3.4.1.min')
 /**
 *提交回复，type=1是问题
  */
@@ -137,4 +138,24 @@ function collapseComments(e) {
     //     //标记二级评论展开状态
     //     e.setAttribute("data-collapse","in");
     // }
+}
+
+/**
+ * 点击标签添加到输入框中
+ */
+function selectTag(e) {
+    var value = e.getAttribute("data-tag");
+    var previous = $("#tag").val();
+    console.log(previous)
+    if (previous.indexOf(value) == -1){
+        if (previous){
+            $("#tag").val(previous+','+value);
+        }else {
+            $("#tag").val(value);
+        }
+    }
+}
+
+function showSelectTag() {
+    $("#select-tag").show();
 }
