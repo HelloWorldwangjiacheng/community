@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/css/community.css"/>
+    <link rel="stylesheet" href="/css/editormd.preview.css"/>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
     <script src="/js/moment.js" type="text/javascript"></script>
-
     <script src="/js/community.js" type="text/javascript"></script>
+    <script src="/js/editormd.min.js" type="text/javascript"></script>
+    <script src="/js/lib/marked.min.js" type="text/javascript"></script>
+    <script src="/js/lib/prettify.min.js" type="text/javascript"></script>
 </head>
 <body>
 <!--    头部导航栏-->
@@ -31,7 +34,14 @@
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!--            使用class="col-lg-12 col-md-12 col-sm-12 col-xs-12"是为占据这个块区域的全部空间-->
 <!--                内容展示-->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${question.description}"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view" >
+                    <textarea style="display: none" th:text="${question.description}"></textarea>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        var questionView = editormd.markdownToHTML("question-view",{});
+                    })
+                </script>
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <!--                标签展示   style="margin:0px 3px"  -->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -169,7 +179,7 @@
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>关注我的github主页</h4>
-                <img src="/image/gala.jpg" class="img-thumbnail" />
+                <img src="/static/images/gala.jpg" class="img-thumbnail" />
             </div>
 
 <!--            相关问题-->
