@@ -26,7 +26,8 @@ CREATE TABLE USER(
 SELECT * FROM `user`;
 ```
 
-mvn flyway:migrate
+mvn flyway:migrate  升级
+mvn flyway:repair  升级失败后进行修复
 
 关于MBG的部分：http://mybatis.org/generator/running/runningWithMaven.html
 
@@ -49,4 +50,16 @@ CREATE TABLE `comment`(
 	like_count INT DEFAULT 0/*点赞数*/
 	
 );
+
+CREATE TABLE `notification`(
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	`notifier` BIGINT NOT NULL,
+	`receiver` BIGINT NOT NULL,
+	`outerId` BIGINT NOT NULL,
+	`type` INT NOT NULL,
+	`gmt_create` BIGINT NOT NULL,
+	`status` INT DEFAULT 0 NOT NULL
+	
+);
 ```
+

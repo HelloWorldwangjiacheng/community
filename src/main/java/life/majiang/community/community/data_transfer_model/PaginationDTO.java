@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class PaginationDTO {
+public class PaginationDTO<T> {
     //本项目是弱化前端的，一般分页都是后台给前台数据，然后前端JS进行分页布局，这里直接后端来做了，前端只是样式布局的设置
     //分页还可以使用pagehelper来进行
-    private List<QuestionDTO> questions;
+    private List<T> data;
 
     private boolean showPrevious;
     private boolean showFirstPage;

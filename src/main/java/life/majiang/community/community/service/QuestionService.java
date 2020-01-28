@@ -38,7 +38,7 @@ public class QuestionService {
     //上面这个方法是给所有问题分页展示用的
     public PaginationDTO list(Integer page, Integer size) {
         Integer totalPage;
-        PaginationDTO paginationDTO = new PaginationDTO();
+        PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
         //totalCount是数据库question表中的记录的数量
         QuestionExample question1 = new QuestionExample();
         Integer totalCount = (int) questionMapper.countByExample(question1);
@@ -72,13 +72,13 @@ public class QuestionService {
             questionDTOList.add(questionDTO);
         }
 //        questionDTOList.reverse();
-        paginationDTO.setQuestions(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return paginationDTO;
     }
     //下面这个方法是给我的问题列表分页用的
     public PaginationDTO list(Long userId, Integer page, Integer size) {
         Integer totalPage;
-        PaginationDTO paginationDTO = new PaginationDTO();
+        PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
         //totalCount是数据库question表中的记录的数量
 //        Integer totalCount = questionMapper.countByUserId(userId);
         QuestionExample questionExample = new QuestionExample();
@@ -114,7 +114,7 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
-        paginationDTO.setQuestions(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return paginationDTO;
     }
 

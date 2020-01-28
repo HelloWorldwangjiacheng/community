@@ -38,17 +38,19 @@
                            autocomplete="off" th:value="${tag}" onclick="showSelectTag()">
                     <div id="select-tag" class="publish-tag-tab">
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" th:each="selectCategory: ${tags}">
+                            <li role="presentation" th:each="selectCategory,selectCategoryStat: ${tags}" th:class="${selectCategoryStat.first? 'active':''}">
                                 <a th:href="${'#'+selectCategory.getCategoryName()}" aria-controls="home" role="tab"
                                    data-toggle="tab" th:text="${selectCategory.getCategoryName()}">开发语言</a>
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane"
-                                 th:each="selectCategory : ${tags}" th:id="${selectCategory.getCategoryName()}" >
+                            <div role="tabpanel"
+                                 th:each="selectCategory,selectCategoryStat : ${tags}"
+                                 th:class="${selectCategoryStat.first?'active tab-pane':'tab-pane'}"
+                                 th:id="${selectCategory.getCategoryName()}" >
                                 <span class="label label-info" th:each="selectTag : ${selectCategory.tags}" th:id="${selectTag}" >
                                     <span class="glyphicon glyphicon-tags" aria-hidden="true"
-                                         th:text="${selectTag}" onclick="selectTag(this)" th:data-tag="${selectTag}"></span>
+                                         th:text="${' '+selectTag}" onclick="selectTag(this)" th:data-tag="${selectTag}"></span>
                                 </span>
                             </div>
                         </div>
