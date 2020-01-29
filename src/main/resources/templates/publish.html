@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <script src="/js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>码匠社区</title>
-    <script src="/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/css/community.css"/>
@@ -42,7 +43,10 @@
                             path:"/js/lib/",
                             delay:0,
                             watch:false,
-                            placeholder:"请输入问题描述"
+                            placeholder:"请输入问题描述",
+                            imageUpload:true,
+                            imageFormats: ["jpg","png","gif","bmp","webp"],
+                            imageUploadURL:"/file/upload"
                         });
                     });
                 </script>
@@ -99,4 +103,7 @@
     </div>
 </div>
 </body>
+<script src="/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="/js/editormd.min.js" type="application/javascript"></script>
+<script src="/js/community.js" type="text/javascript"></script>
 </html>
