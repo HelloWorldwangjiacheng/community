@@ -24,8 +24,12 @@ public class FileUploadController {
         MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
         MultipartFile file = multipartHttpServletRequest.getFile("editormd-image-file");
         try {
-            uCloudProvider.upload(file.getInputStream(),file.getContentType(),file.getOriginalFilename());
-        } catch (IOException e) {
+            String uploadFileName = uCloudProvider.upload(file.getInputStream(), file.getContentType(), file.getOriginalFilename());
+            FileUploadDTO fileUploadDTO = new FileUploadDTO();
+            fileUploadDTO.setSuccess(1);
+            fileUploadDTO.setUrl(uploadFileName);
+            return fileUploadDTO;
+        } catch (Exception e) {
             e.printStackTrace();
         }
         FileUploadDTO fileUploadDTO = new FileUploadDTO();
