@@ -46,7 +46,11 @@
                         </ul>
                     </li>
                     <li th:unless="${session.user != null}">
-                        <a href="https://github.com/login/oauth/authorize?client_id=e2d964df476086c0e719&redirect_uri=http://localhost:8887/callback&scope=user&state=1">登录</a>
+<!--                        <a href="https://github.com/login/oauth/authorize?client_id=e2d964df476086c0e719&redirect_uri=http://localhost:8887/callback&scope=user&state=1">登录</a>-->
+                        <a th:href="@{https://github.com/login/oauth/authorize(client_id='e2d964df476086c0e719',
+                            redirect_uri=${#httpServletRequest.getRequestURL()+'callback'},scope='user',state=1)}">
+                            登录
+                        </a>
                     </li>
                 </ul>
             </div>

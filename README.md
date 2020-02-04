@@ -1,5 +1,24 @@
 ## 码匠社区
 
+##部署
+###依赖
+- Git
+- JDK
+- Maven
+- MySQL
+###步骤
+- yum update
+- yum install git
+- mkdir App / cd App
+- git clone git@github.com:HelloWorldwangjiacheng/community.git
+- yum install maven(自动下载Java8)
+- mvn -v
+- mvn clean compile package 
+- cp src/main/resources/application.properties src/main/resources/application-production.properties
+- vim  src/main/resources/application-production.properties
+- mvn package
+- java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar
+
 ## 资料
 [Spring 文档](https://spring.io/guides)
 [Spring Web文档](https://spring.io/guides/gs/serving-web-content/)
