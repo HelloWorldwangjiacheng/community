@@ -1,44 +1,425 @@
-2020-02-04 16:12:22.573  INFO 15336 --- [restartedMain] l.m.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-3FTN8A9 with PID 15336 (C:\Users\w1586\IdeaProjects\community\target\classes started by w1586 in C:\Users\w1586\IdeaProjects\community)
-2020-02-04 16:12:22.592  INFO 15336 --- [restartedMain] l.m.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
-2020-02-04 16:12:22.710  INFO 15336 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven_jar\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/D:/maven_jar/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
-2020-02-04 16:12:22.758  INFO 15336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-02-04 16:12:22.759  INFO 15336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-02-04 16:12:25.623  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$75774529] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.678  INFO 15336 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-02-04 16:12:25.692  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.748  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$505fcd5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.758  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.761  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.767  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.775  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.776  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$aa545c31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.780  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.782  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.784  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.806  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.807  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.809  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.813  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.814  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.824  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.825  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.830  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.837  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.861  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:25.910  INFO 15336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-04 16:12:26.861  INFO 15336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-02-04 16:12:26.872  INFO 15336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-02-04 16:12:26.873  INFO 15336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-02-04 16:12:26.876  INFO 15336 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-02-04 16:12:26.877  INFO 15336 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-02-04 16:12:26.878  INFO 15336 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-02-04 16:12:26.885  INFO 15336 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-02-04 16:12:27.053  INFO 15336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-02-04 16:12:27.054  INFO 15336 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4295 ms
-2020-02-04 16:12:53.728  INFO 15336 --- [restartedMain] c.v.f.s.VaadinServletContextInitializer  : Search for subclasses and classes with annotations took 26 seconds
-2020-02-04 16:12:53.733  INFO 15336 --- [restartedMain] c.v.f.server.startup.DevModeInitializer  : Starting dev-mode updaters in C:\Users\w1586\IdeaProjects\community folder.
-2020-02-04 16:12:53.812  INFO 15336 --- [restartedMain] dev-updater                              : Visited 82 classes. Took 24 ms.
-2020-02-04 16:12:53.891  INFO 15336 --- [restartedMain] dev-updater                              : Skipping `npm install`.
-2020-02-04 16:12:53.892  INFO 15336 --- [restartedMain] dev-updater                              : Copying frontend resources from jar files ...
-2020-02-04 16:12:54.206  INFO 15336 --- [restartedMain] dev-updater                              : Visited 11 resources. Took 314 ms.
-2020-02-04 16:12:54.281  INFO 15336 --- [restartedMain] dev-updater                              : No js modules to update 'C:\Users\w1586\IdeaProjects\community\target\frontend\generated-flow-imports.js' file
+2020-02-13 01:26:22.119  INFO 24596 --- [restartedMain] l.m.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-3FTN8A9 with PID 24596 (C:\Users\w1586\IdeaProjects\community\target\classes started by w1586 in C:\Users\w1586\IdeaProjects\community)
+2020-02-13 01:26:22.129  INFO 24596 --- [restartedMain] l.m.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-13 01:26:22.186  INFO 24596 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\w1586\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-02-13 01:26:22.187  INFO 24596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-13 01:26:22.188  INFO 24596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-13 01:26:23.739  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e849cf3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.844  INFO 24596 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-02-13 01:26:23.857  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.896  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$c3325770] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.906  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.910  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.915  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.923  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.924  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$1d26e645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.935  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.937  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.940  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.979  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.980  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.983  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.990  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:23.995  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.017  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.024  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.030  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.038  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.071  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.111  INFO 24596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 01:26:24.623  INFO 24596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-13 01:26:24.639  INFO 24596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-13 01:26:24.643  INFO 24596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-13 01:26:24.646  INFO 24596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-02-13 01:26:24.647  INFO 24596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-13 01:26:24.649  INFO 24596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-13 01:26:24.655  INFO 24596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-02-13 01:26:24.812  INFO 24596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-13 01:26:24.812  INFO 24596 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2624 ms
+2020-02-13 01:26:26.064  INFO 24596 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-13 01:26:26.167  INFO 24596 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-13 01:26:27.698  INFO 24596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-13 01:26:27.762  INFO 24596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-13 01:26:27.767  INFO 24596 --- [restartedMain] l.m.c.community.CommunityApplication     : Started CommunityApplication in 6.129 seconds (JVM running for 8.115)
+2020-02-13 01:29:10.226  INFO 24596 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-13 01:29:10.226  INFO 24596 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-13 01:29:10.250  INFO 24596 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2020-02-13 01:29:10.322  INFO 24596 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-13 01:29:11.074  INFO 24596 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-13 16:02:10.956  INFO 13980 --- [restartedMain] l.m.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-3FTN8A9 with PID 13980 (C:\Users\w1586\IdeaProjects\community\target\classes started by w1586 in C:\Users\w1586\IdeaProjects\community)
+2020-02-13 16:02:10.973  INFO 13980 --- [restartedMain] l.m.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-13 16:02:11.097  INFO 13980 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\w1586\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-02-13 16:02:11.097  INFO 13980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-13 16:02:11.097  INFO 13980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-13 16:02:14.100  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e39ffa26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.154  INFO 13980 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-02-13 16:02:14.166  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.219  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$be888259] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.233  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.236  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.244  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.250  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.251  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$187d112e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.256  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.259  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.262  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.281  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.282  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.284  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.289  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.290  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.299  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.300  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.312  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.316  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.346  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:14.400  INFO 13980 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:02:15.080  INFO 13980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-13 16:02:15.093  INFO 13980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-13 16:02:15.094  INFO 13980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-13 16:02:15.096  INFO 13980 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-02-13 16:02:15.097  INFO 13980 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-13 16:02:15.097  INFO 13980 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-13 16:02:15.127  INFO 13980 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-02-13 16:02:15.264  INFO 13980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-13 16:02:15.264  INFO 13980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4167 ms
+2020-02-13 16:02:17.325  INFO 13980 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-13 16:02:17.463  INFO 13980 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-13 16:02:18.047  INFO 13980 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-02-13 16:02:20.151  INFO 13980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-13 16:02:20.204  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:20 CST 2020
+2020-02-13 16:02:20.251  INFO 13980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-13 16:02:20.257  INFO 13980 --- [restartedMain] l.m.c.community.CommunityApplication     : Started CommunityApplication in 10.109 seconds (JVM running for 12.8)
+2020-02-13 16:02:20.299  INFO 13980 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-13 16:02:20.733  INFO 13980 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-13 16:02:20.820  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.820  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.820  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.821  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.821  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.823  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.823  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.824  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.824  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.824  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.826  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.826  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.826  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.826  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.826  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.831  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.831  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.831  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.832  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.832  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.835  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.835  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.835  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.835  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.835  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.837  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.837  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.837  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.837  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.837  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:20.838  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:20 CST 2020
+2020-02-13 16:02:25.205  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:25 CST 2020
+2020-02-13 16:02:25.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.212  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.214  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:25.219  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:25 CST 2020
+2020-02-13 16:02:30.218  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:30 CST 2020
+2020-02-13 16:02:30.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.224  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.224  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.224  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.224  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.224  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.226  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.226  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.226  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.226  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.226  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.228  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.228  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.228  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.229  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.229  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.230  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.230  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.230  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.230  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.230  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.232  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.232  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.233  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.233  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.233  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:30.234  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:30 CST 2020
+2020-02-13 16:02:35.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:35 CST 2020
+2020-02-13 16:02:35.223  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.226  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.232  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.232  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.232  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.234  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.235  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.235  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.235  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.235  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.237  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.237  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.237  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.237  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.238  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.239  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.239  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.239  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.239  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.239  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.241  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.242  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.243  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.243  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.243  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.249  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.249  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.249  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.249  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.249  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:35.254  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:35 CST 2020
+2020-02-13 16:02:40.205  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:40 CST 2020
+2020-02-13 16:02:40.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.216  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.216  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.218  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.218  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.219  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.219  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.220  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:40.223  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:40 CST 2020
+2020-02-13 16:02:45.204  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:45 CST 2020
+2020-02-13 16:02:45.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.210  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.214  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.214  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.214  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.214  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.216  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.216  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.216  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.216  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.220  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.220  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.220  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.220  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.221  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.222  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:45.223  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:45 CST 2020
+2020-02-13 16:02:50.204  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:02:50 CST 2020
+2020-02-13 16:02:50.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.206  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.207  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.209  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.211  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.212  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.213  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.214  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.215  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.217  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : {}
+2020-02-13 16:02:50.218  INFO 13980 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:02:50 CST 2020
+2020-02-13 16:03:07.136  INFO 11932 --- [restartedMain] l.m.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-3FTN8A9 with PID 11932 (C:\Users\w1586\IdeaProjects\community\target\classes started by w1586 in C:\Users\w1586\IdeaProjects\community)
+2020-02-13 16:03:07.141  INFO 11932 --- [restartedMain] l.m.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-13 16:03:07.222  INFO 11932 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\w1586\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/w1586/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-02-13 16:03:07.222  INFO 11932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-13 16:03:07.223  INFO 11932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-13 16:03:09.203  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4825edfb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.306  INFO 11932 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-02-13 16:03:09.330  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.407  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$230e762e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.427  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.support.PluginRegistryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.436  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'relProviderPluginRegistry' of type [org.springframework.plugin.core.OrderAwarePluginRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.442  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean '_relProvider' of type [org.springframework.hateoas.server.core.DelegatingLinkRelationProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.452  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'messageResolver' of type [org.springframework.hateoas.mediatype.MessageSourceResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.453  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration' of type [org.springframework.hateoas.mediatype.hal.HalMediaTypeConfiguration$$EnhancerBySpringCGLIB$$7d030503] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.457  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.458  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.464  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.487  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.488  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.491  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.495  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.498  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.506  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.507  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.522  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.541  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.587  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:09.656  INFO 11932 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'hypermediaWebMvcConverters' of type [org.springframework.hateoas.config.WebConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-13 16:03:10.320  INFO 11932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-13 16:03:10.337  INFO 11932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-13 16:03:10.338  INFO 11932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-13 16:03:10.340  INFO 11932 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-02-13 16:03:10.341  INFO 11932 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-13 16:03:10.341  INFO 11932 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-13 16:03:10.349  INFO 11932 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-02-13 16:03:10.555  INFO 11932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-13 16:03:10.556  INFO 11932 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3333 ms
+2020-02-13 16:03:12.028  INFO 11932 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-13 16:03:12.150  INFO 11932 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-13 16:03:12.662  INFO 11932 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-02-13 16:03:13.944  INFO 11932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-13 16:03:13.987  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:03:13 CST 2020
+2020-02-13 16:03:14.027  INFO 11932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-13 16:03:14.033  INFO 11932 --- [restartedMain] l.m.c.community.CommunityApplication     : Started CommunityApplication in 7.545 seconds (JVM running for 9.952)
+2020-02-13 16:03:14.051  INFO 11932 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-13 16:03:14.261  INFO 11932 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-13 16:03:14.294  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 2
+2020-02-13 16:03:14.295  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 3
+2020-02-13 16:03:14.295  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 4
+2020-02-13 16:03:14.295  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 5
+2020-02-13 16:03:14.295  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 6
+2020-02-13 16:03:14.298  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 7
+2020-02-13 16:03:14.298  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 8
+2020-02-13 16:03:14.298  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 9
+2020-02-13 16:03:14.298  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 10
+2020-02-13 16:03:14.299  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 11
+2020-02-13 16:03:14.302  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 12
+2020-02-13 16:03:14.302  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 13
+2020-02-13 16:03:14.302  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 14
+2020-02-13 16:03:14.303  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 15
+2020-02-13 16:03:14.303  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 16
+2020-02-13 16:03:14.308  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 17
+2020-02-13 16:03:14.308  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 18
+2020-02-13 16:03:14.308  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 19
+2020-02-13 16:03:14.309  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 20
+2020-02-13 16:03:14.309  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 21
+2020-02-13 16:03:14.311  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 22
+2020-02-13 16:03:14.311  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 23
+2020-02-13 16:03:14.311  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 24
+2020-02-13 16:03:14.311  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 25
+2020-02-13 16:03:14.311  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 26
+2020-02-13 16:03:14.313  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 27
+2020-02-13 16:03:14.313  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 28
+2020-02-13 16:03:14.314  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 29
+2020-02-13 16:03:14.314  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 30
+2020-02-13 16:03:14.314  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 31
+2020-02-13 16:03:14.315  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:03:14 CST 2020
+2020-02-13 16:03:18.988  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule start Thu Feb 13 16:03:18 CST 2020
+2020-02-13 16:03:18.990  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 2
+2020-02-13 16:03:18.990  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 3
+2020-02-13 16:03:18.991  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 4
+2020-02-13 16:03:18.991  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 5
+2020-02-13 16:03:18.991  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 6
+2020-02-13 16:03:18.993  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 7
+2020-02-13 16:03:18.993  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 8
+2020-02-13 16:03:18.993  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 9
+2020-02-13 16:03:18.993  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 10
+2020-02-13 16:03:18.993  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 11
+2020-02-13 16:03:18.995  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 12
+2020-02-13 16:03:18.995  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 13
+2020-02-13 16:03:18.995  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 14
+2020-02-13 16:03:18.995  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 15
+2020-02-13 16:03:18.995  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 16
+2020-02-13 16:03:18.997  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 17
+2020-02-13 16:03:18.997  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 18
+2020-02-13 16:03:18.997  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 19
+2020-02-13 16:03:18.997  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 20
+2020-02-13 16:03:18.997  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 21
+2020-02-13 16:03:18.999  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 22
+2020-02-13 16:03:18.999  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 23
+2020-02-13 16:03:18.999  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 24
+2020-02-13 16:03:18.999  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 25
+2020-02-13 16:03:18.999  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 26
+2020-02-13 16:03:19.001  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 27
+2020-02-13 16:03:19.001  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 28
+2020-02-13 16:03:19.001  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 29
+2020-02-13 16:03:19.001  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 30
+2020-02-13 16:03:19.001  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : list question : 31
+2020-02-13 16:03:19.003  INFO 11932 --- [scheduling-1] l.m.c.community.schedule.HotRagTasks     : HotTagSchedule stop Thu Feb 13 16:03:19 CST 2020
